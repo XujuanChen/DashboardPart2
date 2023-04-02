@@ -6,18 +6,17 @@ const Nav = () => {
     <div>
         <nav>
             <ul>
-                <li className="home-link" key="home-button">
+                <li className="home-link" >
                     <Link to='/'>Home</Link>
                 </li>
-                <li className="home-link" key="home-button">
+                <li className="home-link" >
                     <Link to='/about'>About</Link>
                 </li>
-                <li className="home-link" key="home-button">
-                    <Link to='/contact'>Contact</Link>
+                <li className="home-link" >
+                    <Link to="/brewery">Brewery</Link>
                 </li>
             </ul>
         </nav>
-        <Outlet />
     </div>
   )
 }

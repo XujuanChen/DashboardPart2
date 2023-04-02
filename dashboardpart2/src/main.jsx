@@ -4,12 +4,11 @@ import App from './App'
 import './index.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route index={true} path='/' element = {<App />} />
-      </Routes>
+        <App /> 
     </BrowserRouter>
   </React.StrictMode>,
 )
