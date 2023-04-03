@@ -6,40 +6,31 @@ import { PieChart, Pie, Legend, Tooltip } from 'recharts';
 const DonutChart = () => {
 
   const data01 = [
-    { name: 'Group A', value: 400 },
-    { name: 'Group B', value: 300 },
-    { name: 'Group C', value: 300 },
-    { name: 'Group D', value: 200 },
-    { name: 'Group E', value: 278 },
-    { name: 'Group F', value: 189 },
+    { name: 'California',   value: 912 },
+    { name: 'Washington',   value: 472 },
+    { name: 'Colorado',     value: 430 },
+    { name: 'New York',     value: 418 },
+    { name: 'Pennsylvania', value: 343 },
+    { name: 'Oregon',       value: 295 },
   ];
-  
-  const data02 = [
-    { name: 'Group A', value: 2400 },
-    { name: 'Group B', value: 4567 },
-    { name: 'Group C', value: 1398 },
-    { name: 'Group D', value: 9800 },
-    { name: 'Group E', value: 3908 },
-    { name: 'Group F', value: 4800 },
-  ];
-
 
   return (
     <div>
-      PieChart
-
-      <PieChart width={400} height={400}>
+      <PieChart width={350} height={250}>
           <Pie
             dataKey="value"
-            isAnimationActive={false}
+            isAnimationActive={true}
             data={data01}
             cx="50%"
             cy="50%"
             outerRadius={80}
-            fill="#8884d8"
+            innerRadius={40}
+            fill="#99d8c9"
+            fontSize={18}
+            fontWeight={700}
             label
           />
-          <Pie dataKey="value" data={data02} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d" />
+
           <Tooltip />
         </PieChart>
     </div>

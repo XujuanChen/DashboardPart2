@@ -6,14 +6,14 @@ const Nav = () => {
   return (
     <div>
       <div className="sidenav">
-        <li className='btn button-3'>
-          <Link to="/" className="link-style">Home</Link>
+        <li className='btn button-3 blue-btn'>
+          <Link to="/" className="link-style"> <h3> 🏠 Home </h3> </Link>
         </li>
-        <li className='btn button-3'>
-          <Link to="/about" className="link-style">About</Link>
+        <li className='btn button-3 blue-btn'>
+          <Link to="/about" className="link-style"><h3> 🧐 About </h3> </Link>
         </li>
-        <li className='btn button-3'>
-          <Link to="/brewery" className="link-style" >Brewery</Link>
+        <li className='btn button-3 blue-btn'>
+          <Link to="/brewery" className="link-style"> <h3> 🧋 Brewery </h3> </Link>
         </li>
 
         <Statistics />

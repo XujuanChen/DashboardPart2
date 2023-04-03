@@ -5,6 +5,7 @@ import DonutChart from "./DonutChart";
 
 const Welcome = () => {
   const [breweries, setBreweries] = useState([]);
+  const [active, setActive] = useState(false);
 
   const getTotalBreweries = async() => {
     let data;
@@ -43,8 +44,13 @@ const Welcome = () => {
       </div>
 
       <div>
-        <BarChartDemo />
-        <DonutChart />
+        <h3>Top Brewery States in US</h3>
+        <div onClick={()=>setActive(!active)}>
+          {active && <DonutChart /> }
+        </div>
+        <div onClick={()=>setActive(!active)}>
+          {!active && <BarChartDemo />}
+        </div>
       </div>
     </div>
   );

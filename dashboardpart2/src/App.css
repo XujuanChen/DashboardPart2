@@ -199,3 +199,7 @@ input {
 .submit-btn {
   border-color: white;
 }
+
+.blue-btn {
+  background-color: #008E97;
+}
