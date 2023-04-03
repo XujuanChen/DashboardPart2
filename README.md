@@ -2,7 +2,7 @@
 
 Submitted by: **Xujuan Chen**
 
-This web app: **Fetch data of Open Brewery DB**
+This web app: **Fetch data from Open Brewery DB**
 
 Time spent: **16** hours spent in total
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://brewery3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif 
