@@ -1,24 +1,25 @@
 import React from 'react'
-import {Outlet, Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Statistics from './Statistics';
 
 const Nav = () => {
   return (
     <div>
-        <nav>
-            <ul>
-                <li className="home-link" >
-                    <Link to='/'>Home</Link>
-                </li>
-                <li className="home-link" >
-                    <Link to='/about'>About</Link>
-                </li>
-                <li className="home-link" >
-                    <Link to="/brewery">Brewery</Link>
-                </li>
-            </ul>
-        </nav>
+      <div className="sidenav">
+        <li className='btn button-3'>
+          <Link to="/" className="link-style">Home</Link>
+        </li>
+        <li className='btn button-3'>
+          <Link to="/about" className="link-style">About</Link>
+        </li>
+        <li className='btn button-3'>
+          <Link to="/brewery" className="link-style" >Brewery</Link>
+        </li>
+
+        <Statistics />
+      </div>
     </div>
-  )
+  );
 }
 
 export default Nav
